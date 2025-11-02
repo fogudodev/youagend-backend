@@ -1,4 +1,9 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
 // Permitir CORS (ajuste o origin para produção)
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
@@ -207,3 +212,4 @@ try {
     echo json_encode(["success" => false, "message" => "Erro interno ao cadastrar."]);
     exit;
 }
+
