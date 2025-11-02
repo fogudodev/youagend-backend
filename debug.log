@@ -1,0 +1,16 @@
+2025-10-19 04:38:00 - Array
+(
+    [user_id] => 2
+    [booking_id] => 5
+    [status] => cancelado
+    [user_type] => profissional
+)
+
+2025-10-19 04:40:29 - Array
+(
+    [user_id] => 2
+    [booking_id] => 5
+    [status] => cancelado
+    [user_type] => profissional
+)
+

@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redireciona tudo que não for arquivo ou pasta para professional.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9\-]+)$ professional.php?slug=$1 [L,QSA]
