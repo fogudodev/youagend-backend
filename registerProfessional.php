@@ -15,6 +15,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit();
 }
 
+file_put_contents("log.txt", "Chegou: " . date("Y-m-d H:i:s") . "\n", FILE_APPEND);
+
+
 include 'db.php'; // assume $pdo vindo daqui
 
 // Assegura exceptions
@@ -212,4 +215,5 @@ try {
     echo json_encode(["success" => false, "message" => "Erro interno ao cadastrar."]);
     exit;
 }
+
 
