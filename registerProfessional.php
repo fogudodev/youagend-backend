@@ -48,7 +48,7 @@ $password = $input['password'] ?? '';
 $specialty = trim($input['specialty'] ?? '');
 $telefone = trim($input['telefone'] ?? '');
 $tipo = 'profissional';
-$plano = 'trial';
+$plano = '';
 
 // Serviços e horários
 $services = is_array($input['services'] ?? []) ? $input['services'] : [];
@@ -215,5 +215,6 @@ try {
     echo json_encode(["success" => false, "message" => "Erro interno ao cadastrar."]);
     exit;
 }
+
 
 
