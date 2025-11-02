@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
+$host = '34.95.214.67';
 $db   = 'salon_booking';
-$user = 'root';
-$pass = '';
+$user = 'salon';
+$pass = 'Yeshua#77';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -18,5 +18,6 @@ try {
     exit;
 }
 ?>
+
 
 
